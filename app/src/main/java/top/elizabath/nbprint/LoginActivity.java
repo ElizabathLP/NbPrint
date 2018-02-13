@@ -10,12 +10,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import top.elizabath.nbprint.Tools.ProgressButton;
+import top.elizabath.nbprint.Tools.Tos;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -23,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     private static final String EMAIL_PATTERN = "^[a-zA-Z0-9#_~!$&'()*+,;=:.\"(),:;<>@\\[\\]\\\\]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*$";
     private Pattern pattern = Pattern.compile(EMAIL_PATTERN);
     private Matcher matcher;
+    private ImageButton qq_login, wechat_login, weibo_login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +84,31 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+        /**************第三方登录按钮*****************/
+        qq_login = findViewById(R.id.qq_login);
+        weibo_login = findViewById(R.id.weibo_login);
+        wechat_login = findViewById(R.id.wechat_login);
+
+        qq_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Tos.showToast(LoginActivity.this, "QQ登录");
+            }
+        });
+        wechat_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Tos.showToast(LoginActivity.this, "wechat登录");
+            }
+        });
+        weibo_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Tos.showToast(LoginActivity.this, "weibo登录");
+            }
+        });
+
+        /******************************/
     }
     private void hideKeyboard() {
         View view = getCurrentFocus();

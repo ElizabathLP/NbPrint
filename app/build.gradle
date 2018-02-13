@@ -29,6 +29,7 @@ android {
     }
     productFlavors {
     }
+    buildToolsVersion '27.0.3'
 }
 MobSDK {
     appKey "23fb17747f480"

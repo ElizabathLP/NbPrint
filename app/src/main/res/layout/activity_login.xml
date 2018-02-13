@@ -120,24 +120,29 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/qq_login"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/qq" />
+                android:background="@drawable/qq"
+                android:layout_marginRight="5dp" />
 
-            <ImageView
+
+            <ImageButton
+                android:id="@+id/wechat_login"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/wechat" />
+
+            <ImageButton
+                android:id="@+id/weibo_login"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/wechat" />
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="15dp"
-                android:src="@drawable/weibo" />
+                android:background="@drawable/weibo" />
+            <!--ImageButton-->
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
