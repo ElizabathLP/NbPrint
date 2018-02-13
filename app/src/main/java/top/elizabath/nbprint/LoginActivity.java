@@ -93,6 +93,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Tos.showToast(LoginActivity.this, "QQ登录");
+                Tos.showToast(LoginActivity.this, "功能还未开发");
             }
         });
         wechat_login.setOnClickListener(new View.OnClickListener() {
