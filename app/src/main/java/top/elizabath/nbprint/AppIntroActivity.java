@@ -44,7 +44,7 @@ public class AppIntroActivity extends AppIntro {
     @Override
     public void onSkipPressed() {
         //当执行跳过动作时触发
-        Intent intent = new Intent(AppIntroActivity.this, MainActivity.class);
+        Intent intent = new Intent(AppIntroActivity.this, Main_activity.class);
         startActivity(intent);
         SpUtils.putBoolean(AppIntroActivity.this, AppConstants.FIRST_OPEN, true);
         finish();
@@ -61,7 +61,7 @@ public class AppIntroActivity extends AppIntro {
     @Override
     public void onDonePressed() {
         //当执行完成动作时触发
-        Intent intent = new Intent(AppIntroActivity.this, MainActivity.class);
+        Intent intent = new Intent(AppIntroActivity.this, Main_activity.class);
         startActivity(intent);
         SpUtils.putBoolean(AppIntroActivity.this, AppConstants.FIRST_OPEN, true);
         finish();

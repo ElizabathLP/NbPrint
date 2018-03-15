@@ -269,7 +269,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         /*加一句话：如果所有条件判断成功，则运行下方流程，否则吐司失败，目前设计阶段暂时不加*/
 //
 //                        Toast.makeText(RegisterActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+                        startActivity(new Intent(RegisterActivity.this, Main_activity.class));
                         finish();
 
     }

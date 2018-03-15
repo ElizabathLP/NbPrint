@@ -144,7 +144,7 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void Stop() {
                     Intent i=new Intent();
-                    i.setClass(LoginActivity.this,MainActivity.class);
+                    i.setClass(LoginActivity.this,Main_activity.class);
                     startActivity(i);
                 }
             });
